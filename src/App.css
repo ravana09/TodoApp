@@ -14,14 +14,14 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #f5f7fa;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .App-link {
@@ -36,3 +36,164 @@
     transform: rotate(360deg);
   }
 }
+
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+h1 {
+  color: rgb(20, 203, 142);
+  text-align: center;
+}
+
+
+
+.todo-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap:2rem;
+}
+
+.todo-form input[type="text"],
+.todo-form select {
+  flex: 1;
+  padding: 10px;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  gap:2rem;
+  width:500px;
+  
+}
+
+.todo-form button {
+  padding: 10px 20px;
+  background-color:  rgb(15, 105, 75);
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.card-para {
+  margin: 5px 0;
+  max-height: 100px; 
+  overflow:inherit; 
+}
+
+.options-class {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 50px;
+}
+
+.options-class p {
+  color: black;
+  margin: 0;
+}
+
+.options-class select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: rgb(244, 6, 6);
+  color: beige;
+  text-align: center;
+}
+
+
+
+.todo-item {
+  width:500px;
+  height: 300px;
+  background-color: rgb(20, 203, 142);
+  color: white;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.todo-item h3 {
+  margin-top: 0;
+}
+
+.todo-item p {
+  margin: 5px 0;
+}
+
+.todo-item select {
+  padding: 5px;
+}
+
+.todo-item button {
+  margin-top: 5px;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.todo-item button.edit {
+  background-color: rgb(0, 66, 128);
+  color: white;
+}
+
+.status-selector{
+  background-color: rgba(19, 222, 219, 0.694);
+  border: 0px solid grey;
+  margin-right: 10px;
+  width: 350px;
+  height: 300px;
+   border: 1px solid black; 
+   padding: 10px;
+   border-radius: 20px;
+   text-align: start;
+   
+
+  
+}
+.slect-status{
+  display: inline-block;
+  height: 40px;
+  width: 150px;
+  position: relative;
+  left:80px;
+  bottom:63px
+}
+
+.delete-button{
+   color: 'white';
+   height: 30px;
+   width: 100px;
+   margin: 10px;
+   background-color: rgb(244, 157, 7);
+   position: relative;
+   bottom: 80px;
+   left:100px;
+   border-radius: 10px;
+ }
+
+ .edit-button{
+  color: 'white';
+   height: 30px;
+   width: 100px;
+   margin: 10px;
+   background-color: green;
+   border-radius: 10px;
+   position: relative;
+   bottom: 80px;
+   left:90px;
+ }
+
+.completed .slect-status {
+  background-color: lightgreen; 
+}
+
+.not-completed .slect-status {
+  background-color: lightcoral;
+}
+
