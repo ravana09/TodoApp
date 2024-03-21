@@ -112,8 +112,8 @@ const TodoApp = () => {
       </div>
 
       <div className="options-class">
-        <p>My todos</p>
-        <p>
+        <p style={{  textShadow :"0px 5px 10px aquamarine"}} >My todos</p>
+        <p style={{  textShadow :"0px 5px 10px aquamarine"}}>
           Select Filters :
           <select value={filter} onChange={(e) => setFilter(e.target.value)}>
             <option value="all">All</option>
